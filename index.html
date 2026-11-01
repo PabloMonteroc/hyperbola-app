@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiperbola Engine - Geometría Analítica</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar"></aside>
+
+      <main id="canvas-container">
+        <canvas id="graph-canvas"></canvas>
+
+        <div class="canvas-legend">
+          <div class="legend-item">
+            <span class="legend-color branch"></span> Ramas de la hipérbola
+          </div>
+          <div class="legend-item">
+            <span class="legend-color asymptote"></span> Asíntotas
+          </div>
+          <div class="legend-item">
+            <span class="legend-color rect"></span> Rectángulo fundamental
+          </div>
+          <div class="legend-item">
+            <span class="legend-color focus"></span> Focos (F₁, F₂)
+          </div>
+          <div class="legend-item">
+            <span class="legend-color center"></span> Centro (C)
+          </div>
+        </div>
+
+        <div class="canvas-hint">
+          Arrastra para mover el plano • Rueda del ratón para zoom
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
